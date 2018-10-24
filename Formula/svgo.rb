@@ -14,7 +14,7 @@ class Svgo < Formula
     sha256 "bc141b8dbcd54137fe0bb83719fb2816d7a8e0d7cc7fbeeb5332fea861380c79" => :el_capitan
   end
 
-  depends_on "node"
+  depends_on "node" => :recommended
 
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
